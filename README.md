@@ -52,4 +52,4 @@ A responsive and feature-rich frontend web application for a food delivery or re
 └── data.js
 
 🖼️ Meta Preview
-https://github.com/user-attachments/assets/94da4aa6-a412-408e-bc42-71fe61b1e635
+<!-- Uploading "bandicam2025-05-2617-03-02-448online-video-cutter.com-ezgif.com-crop.gif"... -->
