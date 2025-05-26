@@ -1,0 +1,83 @@
+/* Header Styles */
+.header-scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Logo Styles */
+.logo-container {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.logo-icon:hover {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Desktop Navigation */
+.nav-link-modern {
+    position: relative;
+    display: flex;
+    align-items: center;
+    space-x: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #374151;
+    font-weight: 500;
+    overflow: hidden;
+    animation: slideInDown 0.6s ease-out;
+}
+
+.nav-link-modern i {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-link-modern:hover i {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.nav-link-bg {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    transition: left 0.4s ease;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.nav-link-modern:hover .nav-link-bg {
+    left: 0;
+}
+
+.nav-link-modern:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}

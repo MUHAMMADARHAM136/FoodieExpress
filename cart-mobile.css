@@ -1,0 +1,125 @@
+/* Cart Button */
+.cart-btn {
+    display: flex;
+    align-items: center;
+    space-x: 0.75rem;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: slideInRight 0.8s ease-out;
+}
+
+.cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+}
+
+.cart-icon-wrapper {
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #FEF3C7;
+    color: #92400E;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+    min-width: 20px;
+    text-align: center;
+    animation: bounce 0.5s ease;
+}
+
+/* Hamburger Menu */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.line-1-open {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.line-2-open {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.line-3-open {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-nav {
+    padding: 1.5rem;
+}
+
+.mobile-nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: #374151;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.5s ease-out;
+}
+
+.mobile-nav-item i {
+    margin-right: 1rem;
+    width: 20px;
+    color: #FF6B6B;
+}
+
+.mobile-nav-item:hover {
+    background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+    color: white;
+    transform: translateX(10px);
+}
